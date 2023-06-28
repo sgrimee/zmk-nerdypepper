@@ -62,18 +62,6 @@
             key-positions = <0 1>;
             bindings = <&out OUT_BLE>;
         };
-
-        combo_krita {
-            timeout-ms = <100>;
-            key-positions = <0 10 20>;
-            bindings = <&tog KRB>;
-        };
-
-        combo_draw {
-            timeout-ms = <100>;
-            key-positions = <9 19 29>;
-            bindings = <&tog PLAY>;
-        };
     };
 
     keymap {
@@ -81,10 +69,10 @@
 
         default_layer {
             bindings = <
-     &kp Q       &kp W         &kp F        &kp P                    &kp G                      &kp J         &kp L         &kp U       &kp Y    &kp SCLN
-&mt LGUI A  &mt LALT R  &mt LSHIFT S  &mt LCTRL T  &mt LG(LA(LS(LCTRL))) D    &mt LG(LA(LS(LCTRL))) H   &mt LCTRL N  &mt RSHIFT E  &mt LALT I  &mt LGUI O
-     &kp Z       &kp X         &kp C        &kp V                    &kp B                      &kp K         &kp M      &kp CMMA     &kp DOT    &kp FSLH
-                                      &lt FUN TAB              &lt NAV SPC                &lt SYM RET  &lt NUM BSPC
+     &kp Q       &kp W         &kp F        &kp P                    &kp G                      &kp J        &kp L         &kp U       &kp Y    &kp SCLN
+&mt LGUI A  &mt LALT R  &mt LSHIFT S  &mt LCTRL T  &mt LG(LA(LS(LCTRL))) D    &mt LG(LA(LS(LCTRL))) H  &mt LCTRL N  &mt RSHIFT E  &mt LALT I  &mt LGUI O
+     &kp Z       &kp X         &kp C        &kp V                    &kp B                      &kp K        &kp M      &kp CMMA     &kp DOT    &kp FSLH
+                                        &lt 4 TAB                &lt 1 SPC                  &lt 3 RET   &lt 2 BSPC
             >;
         };
 
@@ -121,24 +109,6 @@
 &trans  &trans  &trans  &trans  &trans    &trans  &kp N4  &kp N5  &kp N6  &trans
 &trans  &trans  &trans  &trans  &trans    &trans  &kp N1  &kp N2  &kp N3  &trans
                         &trans  &trans    &trans  &kp N0
-            >;
-        };
-
-        krita_base_layer {
-            bindings = <
-    &kp M  &trans  &kp BSLH       &kp LBKT   &kp RBKT    &trans  &trans  &trans  &trans  &trans
-   &trans  &trans     &kp F          &kp I      &kp O    &trans  &trans  &trans  &trans  &trans
-&kp LC(S)  &trans     &kp P          &kp K      &kp L    &trans  &trans  &trans  &trans  &trans
-                             &kp LS(LC(Z))  &kp LC(Z)    &trans  &trans
-            >;
-        };
-
-        draw {
-            bindings = <
- &kp Q  &kp W   &kp E        &kp R  &kp T      &kp Y        &kp U         &kp I       &kp O          &kp P
-&kp N1  &kp S  &kp N3  &mt LCTRL F  &kp G      &kp H  &mt LCTRL J  &mt RSHIFT K  &mt LALT L  &mt LGUI SCLN
- &kp Z  &kp X   &kp C        &kp V  &kp B      &kp M     &kp LEFT      &kp DOWN   &kp RIGHT         &trans
-                             &kp R  &kp U    &kp RET     &kp BSPC
             >;
         };
     };
